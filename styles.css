@@ -1,0 +1,713 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: greenyellow;
+    background-image: url(images/raw.png);
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 2;
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.main{
+    padding-top: 1.0rem;
+}
+
+.title{
+    width: 250px;
+    height: auto;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;
+    filter: blur(20px);
+    }
+
+    10% {
+        opacity: 1;
+        filter: brightness(2) blur(10px);
+    }
+}
+
+@keyframes circle-rotate{
+    0% {
+        transform: rotate(0deg);
+    }
+
+    60% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.redes{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    gap: 15px;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.redes img{
+    width: 50px;
+    height: auto;
+    transition: 0.10s ease-out;
+}
+
+.redes a:hover img{
+    transform: scale(1.1);
+    opacity: 0.65;
+}
+  
+#Discord1, #Discord2, #Discord3, #Discord4, #Github, #YT1, #YT2, #YT3, #X, #Instagram, #Roblox1, #Roblox2 {
+    display: inline-block;
+    font-family: "Impact", serif;
+    white-space: nowrap;
+    color: black;
+    border-right: 2px solid;
+    font-size: 16px;
+    overflow: hidden;
+    width: 0; /* Inicialmente oculta el texto */
+    animation: typing 2s steps(15, end) forwards, blink .7s infinite step-end alternate;
+}
+
+/* Ajusta la cantidad de "steps()" según la cantidad de letras en cada palabra */
+#Discord1 { animation: typing 2s steps(8, end) forwards, blink .7s infinite step-end alternate; }
+#Discord2 { animation: typing 2s steps(8, end) forwards, blink .7s infinite step-end alternate; }
+#Discord3 { animation: typing 2s steps(8, end) forwards, blink .7s infinite step-end alternate; }
+#Discord4 { animation: typing 2s steps(8, end) forwards, blink .7s infinite step-end alternate; }
+#Github  { animation: typing 1.8s steps(6, end) forwards, blink .7s infinite step-end alternate; }
+#YT1      { animation: typing 1.5s steps(2, end) forwards, blink .7s infinite step-end alternate; }
+#YT2      { animation: typing 1.5s steps(2, end) forwards, blink .7s infinite step-end alternate; }
+#YT3      { animation: typing 1.5s steps(2, end) forwards, blink .7s infinite step-end alternate; }
+#X       { animation: typing 1.2s steps(1, end) forwards, blink .7s infinite step-end alternate; }
+#Instagram  { animation: typing 2s steps(6, end) forwards, blink .7s infinite step-end alternate; }
+#Roblox1 { animation: typing 2s steps(8, end) forwards, blink .7s infinite step-end alternate; }
+#Roblox2 { animation: typing 2s steps(8, end) forwards, blink .7s infinite step-end alternate; }
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: max-content; } /* Se ajusta al tamaño real del texto */
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+@keyframes blink {
+    70% {border-color: transparent;}
+}
+
+
+.sobremi{
+    text-align: center;
+    max-width: 100%;
+    height: 170px;
+    font-family: "Papyrus", serif;
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-top: 0.6rem;
+    max-height: 100%;
+    color: rgb(217, 255, 0);
+    background-color: #00ff15;
+    border: 5px solid rgb(208, 255, 0);
+}
+
+.fondo{
+    text-align: center;
+    color: rgb(238, 255, 0);
+    letter-spacing: 5px;
+    background-color: #00ff0d;
+    font-size: 50px;
+    border: 5px solid rgb(251, 255, 0);
+    margin: 0rem;
+}
+
+.blur{
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+.parrafo{
+    width: 100vw;
+    max-width: 100%;
+    padding: 0px;
+    padding-top: 10px;
+}
+
+.presentacion{
+    text-align: left;
+    font-family: "Papyrus", serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-style: normal;
+    color: red;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #3cff00;
+    border: 5px solid red;
+    box-shadow: 0 6px 6px rgba(0, 255, 13, 0.79);
+}
+
+.presentacionchannel{
+    text-align: left;
+    font-family: "Papyrus", serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-style: normal;
+    color: rgb(238, 255, 0);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #3cff00;
+}
+
+.presentacionbot{
+    text-align: left;
+    font-family: "Papyrus", serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-style: normal;
+    color: rgb(238, 255, 0);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #3cff00;
+}
+
+.yurucamp{
+    text-align: left;
+    font-family: "Papyrus", serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-style: normal;
+    color: rgb(238, 255, 0);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #3cff00;
+}
+
+.black-section{
+    color: rgb(51, 255, 0);
+    letter-spacing: 5px;
+    background-color: rgb(72, 255, 0);
+    border: 5px solid rgb(255, 238, 0);
+}
+
+.galery-container{
+    padding-top: 25px;
+}
+
+.card {
+    background-color: rgb(43, 255, 0);
+    font-family: "Papyrus", serif;
+    font-size: x-large;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    color: rgb(200, 255, 0);
+    padding: 8px;
+    border-radius: 3px;
+    box-shadow: 0 5px 28px rgb(255, 251, 0);
+}
+
+.shine {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255, 238, 0, 0.952) 0%, rgb(247, 230, 0) 50%, rgba(232, 248, 0, 0.562) 100%);
+    transform: skewX(-30deg);
+    transition: 0.5s;
+}
+
+.card:hover .shine {
+    left: 100%;
+    transition: 0.7s ease-in-out;
+}
+
+.card-body img{
+    border-radius: 15px;
+}
+
+
+.projects-title{
+    font-family: "Papyrus", serif;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: red;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: yellow;
+    border: 5px solid red;
+}
+
+.suntime-title{
+    font-family: "Papyrus", serif;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #48ff00;
+}
+
+.titleproyect{
+    font-family: "Papyrus", serif;
+    font-weight: bold;
+    font-size: 45px;
+    letter-spacing: 4px;
+    color: rgb(187, 255, 0);
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #48ff00;
+}
+
+.proyectos{
+    font-family: "Papyrus", serif;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: rgb(187, 255, 0);
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #48ff00;    
+    border: 5px solid rgb(200, 255, 0);
+}
+
+.proyectos img{
+    width: 80px;
+    height: auto;
+    transition: 0.10s ease-out;
+    border-radius: 50%;
+}
+
+.proyectos a:hover img{
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 1200px) {
+    .redes img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 820px) {
+    .presentacion{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .presentacionbot{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .presentacionchannel{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .yurucamp{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media (max-width: 780px) {
+    .presentation{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .presentacionbot{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .presentacionchannel{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .yurucamp{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media (max-width: 750px) {
+    .presentacion{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .presentacionbot{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .presentacionchannel{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .yurucamp{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media (max-width: 650px) {
+    .presentacion{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .presentacionbot{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .presentacionchannel{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .yurucamp{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .projects-title{
+        font-size: 40px;
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+
+    .suntime-title{
+        font-size: 40px;
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+
+    .titleproyect{
+        font-size: 45px;
+        padding-left: 25px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 590px) {
+    .presentacion{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media (max-width: 550px) {
+    .presentacion{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .presentacionbot{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .presentacionchannel{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .yurucamp{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media (max-width: 520px) {
+    .presentacion{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .presentacionbot{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .presentacionchannel{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .yurucamp{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .marco2{
+        position: absolute; 
+        top: -147px;
+        left: -60px;
+        z-index: 2; 
+        width: 134%;
+        height: 201%;
+    }
+}
+
+@media (max-width: 500px) {
+    .presentacion{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .presentacionbot{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .presentacionchannel{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .yurucamp{
+        font-size: 19px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .projects-title{
+        font-size: 40px;
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+
+    .titleproyect{
+        font-size: 45px;
+        padding-left: 25px;
+        padding-right: 10px;
+    }
+
+    .suntime-title{
+        font-size: 40px;
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .redes{
+        flex-direction: column;
+    }
+
+    .title{
+        max-width: 325px;
+    }
+
+    .redes img{
+        width: 100px;
+    }
+    .bio{
+        font-size: 49px;
+    }
+    
+    .projects-title{
+        font-size: 40px;
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+
+    .titleproyect{
+        font-size: 45px;
+        padding-left: 25px;
+        padding-right: 10px;
+    }
+    .suntime-title{
+        font-size: 40px;
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+
+    .presentacion{
+        padding-left: 17px;
+        padding-right: 10px;
+    }
+
+    .presentacionbot{
+        padding-left: 17px;
+        padding-right: 10px;
+    }
+
+    .presentacionchannel{
+        padding-left: 17px;
+        padding-right: 10px;
+    }
+
+    .yurucamp{
+        padding-left: 17px;
+        padding-right: 10px;
+    }
+
+}
+@media (max-width: 450px){
+    .bio{
+        font-size: 40px;
+    }
+    .presentacion{
+        font-size: 20px;
+    }
+    .presentacionchannel{
+        font-size: 20px;
+    }
+
+    .presentacionbot{
+        font-size: 20px;
+    }
+
+    .yurucamp{
+        font-size: 20px;
+    }
+
+    .projects-title{
+        font-size: 40px;
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+    .titleproyect{
+        font-size: 45px;
+        padding-left: 25px;
+        padding-right: 10px;
+    } 
+    .suntime-title{
+        font-size: 40px;
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+}
+@media (max-width: 420px){
+    .bio{
+        font-size: 40px;
+    }
+    .presentacion{
+        font-size: 17px;
+    }
+
+    .presentacionchannel{
+        font-size: 17px;
+    }
+
+    .presentacionbot{
+        font-size: 17px;
+    }
+
+    .yurucamp{
+        font-size: 17px;
+    }
+
+    .projects-title{
+        font-size: 40px;
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+
+    .suntime-title{
+        font-size: 40px;
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+
+    .titleproyect{
+        font-size: 45px;
+        padding-left: 25px;
+        padding-right: 10px;
+    }
+
+    .proyectos img{
+        width: 150px;
+    }
+
+}
+
+
+@media (max-width: 390px){
+    .bio{
+        font-size: 34px;
+    }
+    .presentacion{
+        font-size: 15px;
+        padding-left: 17px;
+        padding-right: 6px;
+    }
+    .documentation p{
+        font-size: 14px;
+        padding-left: 19px;
+        padding-right: 10px;
+    }
+}
